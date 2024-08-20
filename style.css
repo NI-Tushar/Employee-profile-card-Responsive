@@ -1,0 +1,312 @@
+*{
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+:root{
+    /* _______________________________________ employeer color */
+    --emp-color1:rgb(0, 111, 131);
+    --emp-color1-low:rgba(0, 111, 131, 0.329);
+
+    --emp-color2:rgb(214, 114, 0);
+    --emp-color2-low:rgba(214, 114, 0, 0.411);
+    
+    --emp-color3:rgb(0, 121, 30);
+    --emp-color3-low:rgba(0, 121, 30, 0.384);
+
+    --emp-color4:rgb(108, 0, 158);
+    --emp-color4-low:rgba(108, 0, 158, 0.397);
+  }
+
+.team_section{
+    height: 500px;
+    width: 100%;
+}
+.team_section .team_center{
+    max-width: 1000px;
+    height: 100%;
+    margin: auto;
+}
+.team_section .team_center .team_heading{
+    padding: 30px;
+}
+.team_section .team_center .team_heading h2,
+.team_section .team_center .team_heading p{
+    margin: 0;
+    padding: 0;
+    padding: 5px;
+}
+.team_section .team_center .team_heading p{
+    color: rgba(0, 0, 0, 0.459);
+    font-weight: 800;
+}
+
+
+
+
+
+
+
+.team_div {
+    width: 100%;
+      display: grid;    
+      grid-template-columns: 1fr minmax(300px, 1200px) 1fr;
+    }
+    
+    .team_div .team_cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 12rem));
+        gap: 2rem;
+        justify-content: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+      
+    .team_div .team_cards .team_card {
+        margin: auto;
+        height: auto;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        transition: 200ms ease-in;
+        border: none;
+        transition: transform 1.0s;
+    }
+    .team_div .team_cards .team_card:hover{
+        transform: scale(1.1);
+    }
+    .team_div .team_cards .team_card .team_pic{
+        position: relative;
+        height: 175px;
+    }
+  
+    .team_div .team_cards .team_card .card_back{
+        height: 150px;
+        width: 150px;
+        position: absolute;
+        top: 0px;
+        border-radius: 10px;
+    }
+    .team_div .team_cards .team_card img{
+        height: 160px;
+        width: 160px;
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        border-radius: 10px;
+    }
+    .team_div .team_cards .team_card .team_pic .bar{
+        position: absolute;
+        right: 17px;
+        top: 145px;
+        height: 30px;
+        width: 30px;
+        border-bottom-right-radius: 10px;
+    }
+    .team_div .team_cards .team_card .line_box{
+        height: 70px;
+        width: 100%;
+        position: relative;
+    }
+    .team_div .team_cards .team_card .line_box i{
+        position: absolute;
+        left: 45.2%;
+        top: -5px;
+        color: rgba(0, 0, 0, 0.308);
+        font-size: 8px;
+    }
+
+    .team_div .team_cards .team_card .line_box .line1{
+        height: 29px;
+        width: 1px;
+        background-color: rgba(0, 0, 0, 0.308);
+        position: absolute;
+        left: 47.1%;
+        top: 3px;
+    }
+    .team_div .team_cards .team_card .line_box .line2{
+        height: 1px;
+        width: 77px;
+        background-color: rgba(0, 0, 0, 0.308);
+        position: absolute;
+        left: 7.5%;
+        top: 31px;
+    }
+    .team_div .team_cards .team_card .line_box .line3{
+        height: 20px;
+        width: 1px;
+        background-color: rgba(0, 0, 0, 0.308);
+        position: absolute;
+        left: 7.5%;
+        top: 31px;
+    }
+    .team_div .team_cards .team_card .line_box .line4{
+        height: 1px;
+        width: 15px;
+        background-color: rgba(0, 0, 0, 0.308);
+        position: absolute;
+        left: 7.5%;
+        top: 50px;
+    }
+    .team_div .team_cards .team_card .line_box #name_dot{
+        position: absolute;
+        top: 46.5px;
+        left: 15%;
+    }
+    .team_div .team_cards .team_card .line_box .name_box{
+        width: 110px;
+        margin: 0;
+        position: absolute;
+        border-radius: 4px;
+        top: 39px;
+        left: 34px;
+        padding: 2px;
+        padding-left: 10px;
+        color: aliceblue;
+        font-weight:700;
+        text-align: center;
+    }
+
+    .team_div .team_cards .team_card .desc_point{
+        margin-right: 10px;
+        padding: 20px;
+        border-radius: 7px;
+        position: relative;
+    }
+    .team_div .team_cards .team_card .desc_point p{
+        margin: 0;
+        padding: 0;
+        margin-bottom: 5px;
+        font-size: 13px;
+        font-weight: 800;
+    }
+    .team_div .team_cards .team_card .desc_point .bottom_line{
+        position: absolute;
+        height: 3px;
+        width: 100px;
+        bottom: 0px;
+        left: 40px;
+    }
+    .team_div .team_cards .team_card a{
+        padding-top: 3px;
+        padding-bottom: 3px;
+        border-radius: 5px;
+        margin-top: 10px;
+        text-align: center;
+        width: 178px;
+        text-decoration: none;
+        font-weight: 600;
+    }
+    .team_div .team_cards .team_card a i{
+        font-weight: 600;
+        font-size: 13px;
+    }
+  
+
+
+    .team_div .team_cards .emp_1 .card_back{
+        border: 4px solid var(--emp-color1);
+    }
+    .team_div .team_cards .emp_1 .team_pic .bar{
+        background-color: var(--emp-color1-low);
+    }
+    .team_div .team_cards .emp_1 .line_box .name_box{
+        background-color: var(--emp-color1);
+    }
+    .team_div .team_cards .emp_1 .desc_point{
+        background-color: var(--emp-color1-low);
+    }
+    .team_div .team_cards .emp_1 .desc_point .bottom_line{
+        background-color: var(--emp-color1);
+    }
+    .team_div .team_cards .emp_1 a{
+        border: 2px solid var(--emp-color1);
+        color: var(--emp-color1);
+    }
+    .team_div .team_cards .emp_1 a:hover{
+        background-color:var(--emp-color1);
+        color: aliceblue;
+    }
+
+
+
+    .team_div .team_cards .emp_2 .card_back{
+        border: 4px solid var(--emp-color2);
+    }
+    .team_div .team_cards .emp_2 .team_pic .bar{
+        background-color: var(--emp-color2-low);
+    }
+    .team_div .team_cards .emp_2 .line_box .name_box{
+        background-color: var(--emp-color2);
+    }
+    .team_div .team_cards .emp_2 .desc_point{
+        background-color: var(--emp-color2-low);
+    }
+    .team_div .team_cards .emp_2 .desc_point  .bottom_line{
+        background-color: var(--emp-color2);
+    }
+    .team_div .team_cards .emp_2 a{
+        border: 2px solid var(--emp-color2);
+        color: var(--emp-color2);
+    }
+    .team_div .team_cards .emp_2 a:hover{
+        background-color:var(--emp-color2);
+        color: aliceblue;
+    }
+
+
+
+    .team_div .team_cards .emp_3 .card_back{
+        border: 4px solid var(--emp-color3);
+    }
+    .team_div .team_cards .emp_3 .team_pic .bar{
+        background-color: var(--emp-color3-low);
+    }
+    .team_div .team_cards .emp_3 .line_box .name_box{
+        background-color: var(--emp-color3);
+    }
+    .team_div .team_cards .emp_3 .desc_point{
+        background-color: var(--emp-color3-low);
+    }
+    .team_div .team_cards .emp_3 .desc_point  .bottom_line{
+        background-color: var(--emp-color3);
+    }
+    .team_div .team_cards .emp_3 a{
+        border: 2px solid var(--emp-color3);
+        color: var(--emp-color3);
+    }
+    .team_div .team_cards .emp_3 a:hover{
+        background-color:var(--emp-color3);
+        color: aliceblue;
+    }
+
+
+
+    .team_div .team_cards .emp_4 .card_back{
+        border: 4px solid var(--emp-color4);
+    }
+    .team_div .team_cards .emp_4 .team_pic .bar{
+        background-color: var(--emp-color4-low);
+    }
+    .team_div .team_cards .emp_4 .line_box .name_box{
+        background-color: var(--emp-color4);
+    }
+    .team_div .team_cards .emp_4 .desc_point{
+        background-color: var(--emp-color4-low);
+    }
+    .team_div .team_cards .emp_4 .desc_point  .bottom_line{
+        background-color: var(--emp-color4);
+    }
+    .team_div .team_cards .emp_4 a{
+        border: 2px solid var(--emp-color4);
+        color: var(--emp-color4);
+    }
+    .team_div .team_cards .emp_4 a:hover{
+        background-color:var(--emp-color4);
+        color: aliceblue;
+    }
+    
+
